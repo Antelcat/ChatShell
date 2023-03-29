@@ -1,0 +1,21 @@
+﻿<Directives xmlns="http://schemas.microsoft.com/netfx/2013/01/metadata">
+    <Application>
+        <Assembly Name="ChatShell.Core" Dynamic="Required All"/>
+        <Assembly Name="ChatShell" Dynamic="Required All"/>
+        <Assembly Name="OpenAI.GPT3" Dynamic="Required All"/>
+        <Assembly Name="System.Private.CoreLib">
+            <Type Name="System.Collections.Generic.List`1[[ChatShell.Core.Models.ProcessConfigure,ChatShell.Core]]" Dynamic="Required All"/>
+            <Type Name="System.Collections.Generic.List`1[[ChatShell.Core.Interfaces.IAi,ChatShell.Core]]" Dynamic="Required All"/>
+        </Assembly>
+        <Assembly Name="System.Text.Json">
+            <Type Name="System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1[[System.Nullable`1[[System.Single,mscorlib]],mscorlib]]" Dynamic="Required All"/>
+            <Type Name="System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1[[System.Nullable`1[[System.Int32,mscorlib]],mscorlib]]" Dynamic="Required All"/>
+            <Type Name="System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1[[System.Nullable`1[[System.Boolean,mscorlib]],mscorlib]]" Dynamic="Required All"/>
+            <Type Name="System.Text.Json.Serialization.Metadata.JsonPropertyInfo`1[[OpenAI.GPT3.ProviderType,OpenAI.GPT3]]" Dynamic="Required All"/>
+            <Type Name="System.Text.Json.Serialization.Converters.NullableConverter`1[[System.Single,mscorlib]]" Dynamic="Required All"/>
+            <Type Name="System.Text.Json.Serialization.Converters.NullableConverter`1[[System.Int32,mscorlib]]" Dynamic="Required All"/>
+            <Type Name="System.Text.Json.Serialization.Converters.NullableConverter`1[[System.Boolean,mscorlib]]" Dynamic="Required All"/>
+            <Type Name="System.Text.Json.Serialization.Converters.EnumConverter`1[[OpenAI.GPT3.ProviderType,OpenAI.GPT3]]" Dynamic="Required All"/>
+        </Assembly>
+    </Application>
+</Directives>

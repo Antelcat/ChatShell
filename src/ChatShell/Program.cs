@@ -69,8 +69,14 @@ public static class Program {
 						input = (await Console.In.ReadLineAsync(cancellationToken))?.Trim().ToLower();
 						if (input is "" or "y") {
 							await ExecuteAsync(process, command);
+						} else {
+							await process.StandardInput.WriteAsync(Environment.NewLine);
 						}
 
+						break;
+					}
+					default: {
+						await process.StandardInput.WriteAsync(Environment.NewLine);
 						break;
 					}
 				}
