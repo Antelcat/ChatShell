@@ -50,7 +50,7 @@ This configuration file includes calls to both cmd and PowerShell shells, and th
             },
             "ModelId": "gpt-3.5-turbo",
             "MaxTokens": 1024,
-            "Language": "Chinese"
+            "Language": "English"
         }
     ]
 }
