@@ -10,7 +10,7 @@ public static class Program {
 	private static readonly CancellationTokenSource CancellationTokenSource = new();
 
 	public static async Task Main(string[] args) {
-		var fs = File.OpenRead("./AppConfigure.json");
+		var fs = File.OpenRead(Path.Combine(Path.GetDirectoryName(Environment.ProcessPath.NotNull()).NotNull(), "AppConfigure.json"));
 		var configure = (await JsonSerializer.DeserializeAsync<AppConfigure>(fs)).NotNull("Invalid AppConfigure.json");
 		await fs.DisposeAsync();
 
